@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import suppericon from "../assets/icons/Superapp.png";
 import banner from "../assets/images/banner.png";
 import { evalute } from "../Functions";
@@ -14,10 +15,12 @@ const Registration = () => {
   const [error, setError] = useState({});
   const [ischecked, setIschecked] = useState(false);
   const [issubmit, setIssubmit] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     //checking if any input is not fillup
@@ -29,6 +32,7 @@ const Registration = () => {
     //if the error stack is empty then save the data in local
     if (Object.keys(error).length === 0 && issubmit) {
       localStorage.setItem("form-data", JSON.stringify(form));
+      navigate("/category");
     }
   }, [error]);
 

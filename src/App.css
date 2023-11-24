@@ -122,6 +122,20 @@ html {
 .terms-condition p span {
   color: rgba(114, 219, 115, 1);
 }
+.error404 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error404 div h1 {
+  text-align: center;
+  font-size: 100px;
+}
+.error404 div p {
+  font-size: 30px;
+}
 
 /* MOBILE RESPONSIVE */
 @media screen and (max-width: 414px) {

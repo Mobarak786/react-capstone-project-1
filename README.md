@@ -10,11 +10,11 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
 - [x] push your code to github with message “boilerplate react setup”
 - [x] figure out the components and pages in your react app
 - [x] create registration page for super app
-  - [ ] make sure that all fields are filled before you register
-  - [ ] make sure that the terms and conditions are accepted
-  - [ ] if any field is missing, show error below the field with red color
-  - [ ] after the registration data is filled, you need to save the data in localstorage
-- [ ] push your code to github with message “added registration page”
+  - [x] make sure that all fields are filled before you register
+  - [x] make sure that the terms and conditions are accepted
+  - [x] if any field is missing, show error below the field with red color
+  - [x] after the registration data is filled, you need to save the data in localstorage
+- [x] push your code to github with message “added registration page”
 
 ## Checklist-2
 
@@ -42,42 +42,42 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
   - [ ] to show the name of the user , email and username you will have to now save the details on the register page to before you start implementing this one make sure you add a feature to save the user details
     <aside>
     💡 Once you will save the data in localstorage you need to pull the data from localstorage to show on the homepage
-    
+
     </aside>
-    
-    - [ ]  push your code to github with message “added user profile card”
-    - [ ]  show todays date, time and weather using the wheather api
-    - [ ]  push your code to github with message “added wheather and date card”
-    - [ ]  show the news section using the news api
-    - [ ]  push your code to github with message “added news card”
-    
+
+    - [ ] push your code to github with message “added user profile card”
+    - [ ] show todays date, time and weather using the wheather api
+    - [ ] push your code to github with message “added wheather and date card”
+    - [ ] show the news section using the news api
+    - [ ] push your code to github with message “added news card”
+
     <aside>
     💡 Wheather api: [http://weatherapi.com](http://weatherapi.com/)
     News api: [http://newsapi.org](http://newsapi.org/)
-    
+
     </aside>
-    
+
     ## Checklist-4
-    
-    - [ ]  add all notes section in the homepage
-    - [ ]  save the notes in the localstorage
-    - [ ]  push your code to github with message “added all notes section”
-    - [ ]  add timer card
-        - [ ]  user can set a timer
-        - [ ]  play a tune on timer completion
-    - [ ]  push your code to github with message “added timer card”
-    
+
+    - [ ] add all notes section in the homepage
+    - [ ] save the notes in the localstorage
+    - [ ] push your code to github with message “added all notes section”
+    - [ ] add timer card
+      - [ ] user can set a timer
+      - [ ] play a tune on timer completion
+    - [ ] push your code to github with message “added timer card”
+
     ## Checklist-5
-    
-    - [ ]  create a browse entertainment page
-    - [ ]  push your code to github with message “added browse entertainment page”
-    - [ ]  use the movies api to show data on the page
-    
+
+    - [ ] create a browse entertainment page
+    - [ ] push your code to github with message “added browse entertainment page”
+    - [ ] use the movies api to show data on the page
+
     <aside>
     💡 https://rapidapi.com/unogs/api/unogs
-    
+
     </aside>
-    
-    - [ ]  push your code to github with message “add movies api”
-    - [ ]  toggle between browse entertainment page and homepage
-    - [ ]  push your code to github with message “added toggle between browse and homepage”
+
+    - [ ] push your code to github with message “add movies api”
+    - [ ] toggle between browse entertainment page and homepage
+    - [ ] push your code to github with message “added toggle between browse and homepage”
