@@ -18,26 +18,27 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
 
 ## Checklist-2
 
-- [ ] before you get started here now you need to define two routes for your app
-  - [ ] register route
-  - [ ] select category route
-- [ ] push your code to github with message “added routing”
-- [ ] create select category page for entertainment page
-  - [ ] user can select multiple categories(min 3 categories required)
-  - [ ] user can select and un-select the category by clicking close button(x)
-- [ ] after the user have selected the category you need to store the data in local storage of your browser
+- [x] before you get started here now you need to define two routes for your app
+  - [x] register route
+  - [x] select category route
+- [x] push your code to github with message “added routing”
+- [x] create select category page for entertainment page
+  - [x] user can select multiple categories(min 3 categories required)
+  - [x] user can select and un-select the category by clicking close button(x)
+- [x] after the user have selected the category you need to store the data in local storage of your browser
 
 <aside>
 💡 Local Storage Reference https://www.youtube.com/watch?v=HTSAJna3X8c
 
 </aside>
 
-- [ ] make sure that you are able only go to next page once you select the category
-- [ ] push your code to github with message “added category page”
+- [x] make sure that you are able only go to next page once you select the category
+- [x] push your code to github with message “added category page”
 
 ## Checklist-3
 
 - [ ] create homepage which is divided in 3 sections
+
   - [ ] user profile card with category selected
   - [ ] to show the name of the user , email and username you will have to now save the details on the register page to before you start implementing this one make sure you add a feature to save the user details
     <aside>

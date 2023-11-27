@@ -5,7 +5,7 @@ const Error404 = () => {
     <div className="error404">
       <div>
         <h1>Error 404</h1>
-        <p>This page does not exist.please click a proper route.</p>
+        <p>This page does not exist.Please check a proper route.</p>
       </div>
     </div>
   );

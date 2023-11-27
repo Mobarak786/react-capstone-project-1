@@ -34,6 +34,9 @@ const Registration = () => {
       localStorage.setItem("form-data", JSON.stringify(form));
       navigate("/category");
     }
+    // if ther is a user in localstorage redirect to category
+    const user = JSON.parse(localStorage.getItem("form-data"));
+    user && navigate("/category");
   }, [error]);
 
   return (

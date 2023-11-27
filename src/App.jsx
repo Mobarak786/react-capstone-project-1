@@ -3,13 +3,18 @@ import "./App.css";
 import Registration from "./pages/Registration";
 import Category from "./pages/Category";
 import Error404 from "./pages/Error404";
+import Home from "./pages/Home";
+import PrivateRoutes from "./auth/PrivateRoutes";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/register" element={<Registration />} />
-        <Route path="/category" element={<Category />} />
+        <Route exact path="/" element={<Registration />} />
+        <Route element={<PrivateRoutes />}>
+          <Route path="/category" element={<Category />} />
+          <Route path="/home" element={<Home />} />
+        </Route>
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>

@@ -1,3 +1,12 @@
+import action from "../assets/images/action.png";
+import drama from "../assets/images/drama.png";
+import romance from "../assets/images/romance.png";
+import thriller from "../assets/images/thriller.png";
+import western from "../assets/images/western.png";
+import horror from "../assets/images/horror.png";
+import fantacy from "../assets/images/fantacy.png";
+import music from "../assets/images/music.png";
+import fiction from "../assets/images/fiction.png";
 export const evalute = (values, check) => {
   const err = {};
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -24,3 +33,15 @@ export const evalute = (values, check) => {
   }
   return err;
 };
+
+export const imageArray = [
+  { title: "Action", color: "rgba(255, 82, 9, 1)", img: action },
+  { title: "Drama", color: "rgba(215, 164, 255, 1)", img: drama },
+  { title: "Romance", color: "rgba(17, 184, 0, 1)", img: romance },
+  { title: "Thriller", color: "rgba(132, 194, 255, 1)", img: thriller },
+  { title: "Western", color: "rgba(144, 37, 0, 1)", img: western },
+  { title: "Horror", color: "rgba(115, 88, 255, 1)", img: horror },
+  { title: "Fantacy", color: "rgba(255, 74, 222, 1)", img: fantacy },
+  { title: "Music", color: "rgba(230, 30, 50, 1)", img: music },
+  { title: "Fiction", color: "rgba(108, 208, 97, 1)", img: fiction },
+];
