@@ -32,7 +32,7 @@ const Category = () => {
         <div className="selected-cat-div">
           {selected?.map((item) => (
             <div key={item} className="selected-category">
-              <h2>{item}</h2>{" "}
+              <h2>{item}</h2>
               <button onClick={() => handleClick(item)}>X</button>
             </div>
           ))}

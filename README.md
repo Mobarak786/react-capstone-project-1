@@ -37,10 +37,10 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
 
 ## Checklist-3
 
-- [ ] create homepage which is divided in 3 sections
+- [x] create homepage which is divided in 3 sections
 
-  - [ ] user profile card with category selected
-  - [ ] to show the name of the user , email and username you will have to now save the details on the register page to before you start implementing this one make sure you add a feature to save the user details
+  - [x] user profile card with category selected
+  - [x] to show the name of the user , email and username you will have to now save the details on the register page to before you start implementing this one make sure you add a feature to save the user details
     <aside>
     💡 Once you will save the data in localstorage you need to pull the data from localstorage to show on the homepage
 
