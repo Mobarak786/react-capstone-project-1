@@ -46,9 +46,9 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
 
     </aside>
 
-    - [ ] push your code to github with message “added user profile card”
-    - [ ] show todays date, time and weather using the wheather api
-    - [ ] push your code to github with message “added wheather and date card”
+    - [x] push your code to github with message “added user profile card”
+    - [x] show todays date, time and weather using the wheather api
+    - [x] push your code to github with message “added wheather and date card”
     - [ ] show the news section using the news api
     - [ ] push your code to github with message “added news card”
 

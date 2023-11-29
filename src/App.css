@@ -329,9 +329,10 @@ html {
 .weather-card-body {
   background: rgba(16, 23, 68, 1);
   height: 70%;
+  padding: 10px;
   border-radius: 0 0 30px 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .weather-card-header h1 {
   font-family: Roboto;
@@ -340,7 +341,53 @@ html {
   line-height: 78px;
   letter-spacing: 0.02em;
 }
+.weather-card-body div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather-card-body div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+#temprature {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 400;
+}
+#temp-bar {
+  margin-top: 0;
+}
 
+#weather-bar img {
+  width: 100px;
+  height: 120px;
+  object-fit: contain;
+  margin-top: -20px;
+}
+#weather-bar p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+}
+.weather-card-body div div img {
+  width: 20px;
+  height: 30px;
+}
+.weather-card-body div div p {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
 .home-page-sec-2 {
   width: 40%;
   height: fit-content;
