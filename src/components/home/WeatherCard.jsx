@@ -1,6 +1,7 @@
 import React from "react";
 import { useFetch } from "../../utils/FetchData";
 import pressure from "../../assets/icons/pressure.png";
+import cloud from "../../assets/icons/cloud.png";
 import wind from "../../assets/icons/wind.png";
 import humidity from "../../assets/icons/humidity.png";
 import { calculateDate, calculateTime } from "../../Functions";
@@ -17,8 +18,15 @@ const WeatherCard = () => {
       </div>
       <div className="weather-card-body">
         <div id="weather-bar">
-          <img src={apiData?.current?.condition?.icon} alt="weather" />
-          <p>{apiData?.current?.condition?.text}</p>
+          <img
+            src={apiData !== null ? apiData?.current?.condition?.icon : cloud}
+            alt="weather-icon"
+          />
+          <p>
+            {apiData !== null
+              ? apiData?.current?.condition?.text
+              : "Heavy Rain"}
+          </p>
         </div>
         <div>
           <h2 id="temprature">{apiData?.current?.temp_c}°C</h2>

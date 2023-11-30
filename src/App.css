@@ -235,27 +235,73 @@ html {
 
 /* home page css */
 .home-page {
-  padding: 5%;
+  padding: 4%;
   display: flex;
   justify-content: space-between;
 }
 .home-page-sec-1 {
-  width: 60%;
-  padding: 0 5%;
+  width: 70%;
+  padding: 0 2%;
   height: fit-content;
 }
+.weather-profile-note-sec {
+  display: flex;
+  width: 100%;
+}
+.weather-profile-sec {
+  width: 60%;
+}
+.note-section {
+  width: 40%;
+  margin-left: 25px;
+}
+.note-body {
+  background-color: rgba(241, 199, 91, 1);
+  padding: 20px;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+}
+.note-body textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.note-body h1 {
+  color: black;
+  font-family: Roboto;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.timer-section {
+  background-color: green;
+}
 .profile-card {
+  background-color: white;
   width: 100%;
   height: auto;
   background: rgba(87, 70, 234, 1);
   border-radius: 25px;
-  padding: 5%;
+  padding: 2%;
   display: flex;
   justify-content: space-between;
 }
 .profile-image {
   width: 40%;
-  height: 350px;
+  height: 300px;
 }
 .profile-image img {
   width: 100%;
@@ -263,7 +309,7 @@ html {
   object-fit: contain;
 }
 .profile-details {
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,17 +318,17 @@ html {
 .profile-details h3 {
   margin-top: 7px;
   font-family: Roboto;
-  font-size: clamp(15px, 2vw, 50px);
+  font-size: clamp(15px, 1.5vw, 50px);
   font-weight: 400;
-  line-height: 38px;
+  line-height: 25px;
   letter-spacing: 0.02em;
 }
 .profile-details h1 {
   margin-top: 7px;
   font-family: Roboto;
-  font-size: clamp(15px, 4vw, 50px);
+  font-size: clamp(15px, 3vw, 50px);
   font-weight: 500;
-  line-height: 48px;
+  line-height: 25px;
   letter-spacing: 0.02em;
 }
 .profile-geners {
@@ -298,7 +344,7 @@ html {
 }
 .profile-geners > div {
   background-color: rgba(159, 148, 255, 1);
-  width: 140px;
+  width: 110px;
   height: 40px;
   margin: 10px 10px 10px 0;
   border-radius: 30px;
@@ -307,20 +353,20 @@ html {
   align-items: center;
 }
 .profile-geners div h2 {
-  font-family: Roboto, serif;
-  font-size: 25px;
+  font-family: Roboto;
+  font-size: 22px;
   font-weight: 300;
   letter-spacing: 0.02em;
 }
 
 .weather-card {
-  margin-top: 40px;
+  margin-top: 25px;
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 .weather-card-header {
   background: rgba(255, 74, 222, 1);
-  height: 30%;
+  height: 25%;
   border-radius: 30px 30px 0 0;
   display: flex;
   justify-content: space-around;
@@ -328,7 +374,7 @@ html {
 }
 .weather-card-body {
   background: rgba(16, 23, 68, 1);
-  height: 70%;
+  height: 75%;
   padding: 10px;
   border-radius: 0 0 30px 30px;
   display: flex;
@@ -336,7 +382,7 @@ html {
 }
 .weather-card-header h1 {
   font-family: Roboto;
-  font-size: clamp(15px, 3vw, 50px);
+  font-size: clamp(15px, 2.2vw, 40px);
   font-weight: 500;
   line-height: 78px;
   letter-spacing: 0.02em;
@@ -353,26 +399,22 @@ html {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 15px;
 }
 #temprature {
   font-family: Roboto;
-  font-size: clamp(15px, 4vw, 50px);
+  font-size: clamp(15px, 2.5vw, 40px);
   font-weight: 400;
-}
-#temp-bar {
-  margin-top: 0;
 }
 
 #weather-bar img {
-  width: 100px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
-  margin-top: -20px;
+  margin-top: 10px;
 }
 #weather-bar p {
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 25px;
   text-align: left;
@@ -389,7 +431,7 @@ html {
   text-align: left;
 }
 .home-page-sec-2 {
-  width: 40%;
+  width: 30%;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -447,13 +489,13 @@ html {
 }
 .news-body p {
   color: black;
-  text-align: justify;
   font-family: Roboto;
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
   letter-spacing: 0.02em;
 }
+
 .news-body::-webkit-scrollbar {
   display: none;
 }

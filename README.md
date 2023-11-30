@@ -49,8 +49,8 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
     - [x] push your code to github with message “added user profile card”
     - [x] show todays date, time and weather using the wheather api
     - [x] push your code to github with message “added wheather and date card”
-    - [ ] show the news section using the news api
-    - [ ] push your code to github with message “added news card”
+    - [x] show the news section using the news api
+    - [x] push your code to github with message “added news card”
 
     <aside>
     💡 Wheather api: [http://weatherapi.com](http://weatherapi.com/)
@@ -60,9 +60,9 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
 
     ## Checklist-4
 
-    - [ ] add all notes section in the homepage
-    - [ ] save the notes in the localstorage
-    - [ ] push your code to github with message “added all notes section”
+    - [x] add all notes section in the homepage
+    - [x] save the notes in the localstorage
+    - [x] push your code to github with message “added all notes section”
     - [ ] add timer card
       - [ ] user can set a timer
       - [ ] play a tune on timer completion
