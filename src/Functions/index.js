@@ -45,3 +45,15 @@ export const imageArray = [
   { title: "Music", color: "rgba(230, 30, 50, 1)", img: music },
   { title: "Fiction", color: "rgba(108, 208, 97, 1)", img: fiction },
 ];
+
+export const calculateDate = () => {
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  const currentDate = `${day}-${month}-${year}`;
+  return currentDate;
+};
+export const calculateTime = () => {
+  return new Date().toString().slice(15, 21);
+};

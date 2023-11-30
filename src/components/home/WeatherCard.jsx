@@ -3,22 +3,11 @@ import { useFetch } from "../../utils/FetchData";
 import pressure from "../../assets/icons/pressure.png";
 import wind from "../../assets/icons/wind.png";
 import humidity from "../../assets/icons/humidity.png";
+import { calculateDate, calculateTime } from "../../Functions";
 const url =
   "https://api.weatherapi.com/v1/current.json?key=09292ebca7184871bdf182337232911&q=India&aqi=no";
 const WeatherCard = () => {
   const { isLoading, serverError, apiData } = useFetch(url);
-  const calculateDate = () => {
-    const date = new Date();
-    const day = date.getDate();
-    const month = date.getMonth() + 1;
-    const year = date.getFullYear();
-    const currentDate = `${day}-${month}-${year}`;
-    return currentDate;
-  };
-  console.log(apiData);
-  const calculateTime = () => {
-    return new Date().toString().slice(15, 21);
-  };
 
   return (
     <div className="weather-card">
