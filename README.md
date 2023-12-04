@@ -70,8 +70,8 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
 
     ## Checklist-5
 
-    - [ ] create a browse entertainment page
-    - [ ] push your code to github with message “added browse entertainment page”
+    - [x] create a browse entertainment page
+    - [x] push your code to github with message “added browse entertainment page”
     - [ ] use the movies api to show data on the page
 
     <aside>

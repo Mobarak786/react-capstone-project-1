@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProfileCard from "../components/home/profileCard";
 import WeatherCard from "../components/home/WeatherCard";
 import NewsCard from "../components/home/NewsCard";
@@ -26,7 +27,9 @@ const Home = () => {
         <NewsCard />
       </div>
       <div className="browse-btn-sec">
-        <button>Browse</button>
+        <Link to="/browseEntertainment">
+          <button>Browse</button>
+        </Link>
       </div>
     </div>
   );
