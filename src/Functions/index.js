@@ -7,6 +7,8 @@ import horror from "../assets/images/horror.png";
 import fantacy from "../assets/images/fantacy.png";
 import music from "../assets/images/music.png";
 import fiction from "../assets/images/fiction.png";
+
+import ringtone from "../assets/audio/timer.mp3";
 export const evalute = (values, check) => {
   const err = {};
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -54,6 +56,25 @@ export const calculateDate = () => {
   const currentDate = `${day}-${month}-${year}`;
   return currentDate;
 };
+
 export const calculateTime = () => {
   return new Date().toString().slice(15, 21);
+};
+
+export const Hours = (time) => {
+  const hour = Math.floor(time / 3600);
+  return hour;
+};
+export const Minutes = (time) => {
+  const munites = Math.floor((time % 3600) / 60);
+  return munites;
+};
+export const Seconds = (time) => {
+  const seconds = Math.floor(time % 60);
+  return seconds;
+};
+
+export const playSound = () => {
+  const audio = new Audio(ringtone);
+  audio.play();
 };

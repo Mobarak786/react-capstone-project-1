@@ -35,19 +35,19 @@ const NewsCard = () => {
         </div>
       </div>
       <div className="news-body">
-        {apiData !== null && serverError !== null ? (
-          ""
-        ) : (
-          <p>
-            In the years since human beings first reached the summit of Mount
-            Everest in 1953, climbing the world’s highest mountain has changed
-            dramatically. Today, hundreds of mountaineers manage the feat each
-            year thanks to improvements in knowledge, technology, and the
-            significant infrastructure provided by commercially guided
-            expeditions that provide a veritable highway up the mountain for
-            those willing to accept both the......
-          </p>
-        )}
+        <div>
+          {apiData !== null && serverError !== null ? (
+            ""
+          ) : (
+            <p>
+              In the years since human beings first reached the summit of Mount
+              Everest in 1953, climbing the world’s highest mountain has changed
+              dramatically. Today, hundreds of mountaineers manage the feat each
+              expeditions that provide a veritable highway up the mountain for
+              those willing to accept both the......
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );

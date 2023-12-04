@@ -7,13 +7,18 @@ const Notes = () => {
     localStorage.setItem("note-data", JSON.stringify(note));
   };
   useEffect(() => {
-    const savedNotes = JSON.stringify(localStorage.getItem("note-data"));
-    savedNotes.length > 0 && setNote(savedNotes.slice(3, -3));
+    const savedNotes = JSON.parse(localStorage.getItem("note-data"));
+    setNote(savedNotes);
   }, []);
   return (
     <div className="note-body">
       <h1>All Notes</h1>
-      <textarea value={note} name="note" onChange={handleChange} />
+      <textarea
+        placeholder="Write something here"
+        value={note}
+        name="note"
+        onChange={handleChange}
+      />
     </div>
   );
 };

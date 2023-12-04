@@ -63,10 +63,10 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
     - [x] add all notes section in the homepage
     - [x] save the notes in the localstorage
     - [x] push your code to github with message “added all notes section”
-    - [ ] add timer card
-      - [ ] user can set a timer
-      - [ ] play a tune on timer completion
-    - [ ] push your code to github with message “added timer card”
+    - [x] add timer card
+      - [x] user can set a timer
+      - [x] play a tune on timer completion
+    - [x] push your code to github with message “added timer card”
 
     ## Checklist-5
 

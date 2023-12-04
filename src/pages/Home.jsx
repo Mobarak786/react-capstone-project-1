@@ -3,6 +3,7 @@ import ProfileCard from "../components/home/profileCard";
 import WeatherCard from "../components/home/WeatherCard";
 import NewsCard from "../components/home/NewsCard";
 import Notes from "../components/home/Notes";
+import Timer from "../components/home/timer/Timer";
 
 const Home = () => {
   return (
@@ -17,10 +18,15 @@ const Home = () => {
             <Notes />
           </div>
         </div>
-        <div className="timer-section">timer</div>
+        <div className="timer-section">
+          <Timer />
+        </div>
       </div>
       <div className="home-page-sec-2">
         <NewsCard />
+      </div>
+      <div className="browse-btn-sec">
+        <button>Browse</button>
       </div>
     </div>
   );
