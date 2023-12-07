@@ -1,17 +1,33 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Browse.module.css";
 import superapp from "../../assets/icons/Superapp.png";
 import usericon from "../../assets/icons/usericon.png";
 import Movie from "../../components/movie/Movie";
 const BrowseEntertainment = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/home");
+  };
   const genres = JSON.parse(localStorage.getItem("category"));
 
   return (
     <main className={styles.mainSection}>
       <header className={styles.header}>
-        <img className={styles.supericon} src={superapp} alt="super-app-icon" />
+        <img
+          onClick={handleClick}
+          className={styles.supericon}
+          src={superapp}
+          alt="super-app-icon"
+        />
         <div>
-          <img className={styles.usericon} src={usericon} alt="user-icon" />
+          <img
+            onClick={handleClick}
+            className={styles.usericon}
+            src={usericon}
+            alt="user-icon"
+          />
         </div>
       </header>
 
@@ -24,7 +40,7 @@ const BrowseEntertainment = () => {
           <div key={genre} className={styles.movies_list}>
             <h3>{genre}</h3>
             <div className={styles.movie}>
-              <Movie key={genre} genre={genre} />
+              <Movie genre={genre} />
             </div>
           </div>
         ))}

@@ -81,4 +81,4 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
 
     - [x] push your code to github with message “add movies api”
     - [x] toggle between browse entertainment page and homepage
-    - [ ] push your code to github with message “added toggle between browse and homepage”
+    - [x] push your code to github with message “added toggle between browse and homepage”
