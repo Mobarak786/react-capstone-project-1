@@ -14,7 +14,7 @@ const options = {
 
 const NewsCard = () => {
   const { isLoading, apiData, serverError } = useFetch(url, options);
-
+  // console.log(apiData);
   return (
     <div className="news-card">
       <div className="news-header">

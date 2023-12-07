@@ -11,7 +11,7 @@ const Timer = () => {
   const [second, setSecond] = useState(0);
   const [timer, setTimer] = useState(false);
   const [totaltime, setTotaltime] = useState(0);
-  const [stroke, setStroke] = useState(circumference);
+  const [stroke, setStroke] = useState(0);
   const [strokeUnit, setStrokeUnit] = useState(0);
 
   const handleStart = () => {
@@ -23,7 +23,7 @@ const Timer = () => {
   useEffect(() => {
     //returns the useeffect if time is zero this stops unlimited re-rendering...
     if (totaltime === 0) {
-      playSound();
+      timer && playSound();
       setTimer(false);
       setHour(0);
       setMinute(0);
@@ -38,9 +38,9 @@ const Timer = () => {
       setTotaltime((prev) => prev - 1);
     }, 1000);
 
-    //decreasing the timer stroke
+    //decreasing the timer stroke..
     setStrokeUnit(circumference / (hour * 3600 + minute * 60 + second));
-    setStroke((prev) => prev - strokeUnit);
+    setStroke((prev) => prev + strokeUnit);
 
     return () => clearTimeout(timeout);
   }, [totaltime, timer]);

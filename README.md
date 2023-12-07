@@ -72,13 +72,13 @@ Figma Link: https://www.figma.com/file/KSnuoadZiOxnArhLXWHDxV/Untitled?node-id=0
 
     - [x] create a browse entertainment page
     - [x] push your code to github with message “added browse entertainment page”
-    - [ ] use the movies api to show data on the page
+    - [x] use the movies api to show data on the page
 
     <aside>
     💡 https://rapidapi.com/unogs/api/unogs
 
     </aside>
 
-    - [ ] push your code to github with message “add movies api”
-    - [ ] toggle between browse entertainment page and homepage
+    - [x] push your code to github with message “add movies api”
+    - [x] toggle between browse entertainment page and homepage
     - [ ] push your code to github with message “added toggle between browse and homepage”

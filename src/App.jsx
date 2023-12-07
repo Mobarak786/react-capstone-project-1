@@ -5,7 +5,7 @@ import Category from "./pages/Category";
 import Error404 from "./pages/Error404";
 import Home from "./pages/Home";
 import PrivateRoutes from "./auth/PrivateRoutes";
-import BrowseEntertainment from "./pages/BrowseEntertainment";
+import BrowseEntertainment from "./pages/BrowseEntertainment/BrowseEntertainment";
 
 const App = () => {
   return (
