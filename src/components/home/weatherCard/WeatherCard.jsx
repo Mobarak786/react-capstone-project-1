@@ -1,26 +1,30 @@
 import React from "react";
-import { useFetch } from "../../utils/FetchData";
-import pressure from "../../assets/icons/pressure.png";
-import cloud from "../../assets/icons/cloud.png";
-import wind from "../../assets/icons/wind.png";
-import humidity from "../../assets/icons/humidity.png";
-import { calculateDate, calculateTime } from "../../Functions";
+import { useFetch } from "../../../api/FetchData";
+import styles from "./weathercard.module.css";
+import pressure from "../../../assets/icons/pressure.png";
+import cloud from "../../../assets/icons/cloud.png";
+import wind from "../../../assets/icons/wind.png";
+import humidity from "../../../assets/icons/humidity.png";
+
+import { calculateDate, calculateTime } from "../../../Functions";
 const url =
   "https://api.weatherapi.com/v1/current.json?key=09292ebca7184871bdf182337232911&q=India&aqi=no";
 const WeatherCard = () => {
-  const { isLoading, serverError, apiData } = useFetch(url);
+  const { apiData } = useFetch(url);
 
   return (
-    <div className="weather-card">
-      <div className="weather-card-header">
+    <div className={styles.weather_card}>
+      <div className={styles.weather_card_header}>
         <h1>{calculateDate()}</h1>
         <h1>{calculateTime()} PM</h1>
       </div>
-      <div className="weather-card-body">
+      <div className={styles.weather_card_body}>
         <div id="weather-bar">
           <img
             src={apiData !== null ? apiData?.current?.condition?.icon : cloud}
             alt="weather-icon"
+            width={60}
+            height={60}
           />
           <p>
             {apiData !== null

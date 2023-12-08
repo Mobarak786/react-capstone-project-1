@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./timer.module.css";
 import { Hours, Minutes, Seconds } from "../../../Functions";
 
 const Countdown = ({ stroke, totaltime }) => {
   return (
-    <div className="counter">
+    <div className={styles.counter}>
       <svg className="progerss" width="140" height="140">
         <circle
           style={{
@@ -17,7 +18,7 @@ const Countdown = ({ stroke, totaltime }) => {
           stroke="rgba(255, 106, 106, 1)"
           strokeWidth="5"
         />
-        <text className="progress-bar-text" x="18" y="80" fill="white">
+        <text className={styles.progress_bar_text} x="18" y="80" fill="white">
           {Hours(totaltime) < 10
             ? `0${Hours(totaltime)}:`
             : `${Hours(totaltime)}:`}

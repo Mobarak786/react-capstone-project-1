@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import suppericon from "../assets/icons/Superapp.png";
-import banner from "../assets/images/banner.png";
-import { evalute } from "../Functions";
+import styles from "./registration.module.css";
+import suppericon from "../../assets/icons/Superapp.png";
+import banner from "../../assets/images/banner.png";
+import { evalute } from "../../Functions";
 
 const data = {
   name: "",
@@ -40,19 +41,19 @@ const Registration = () => {
   }, [error]);
 
   return (
-    <div className="registration-page">
-      <div className="page-banner">
+    <div className={styles.registration_page}>
+      <div className={styles.page_banner}>
         <img src={banner} alt="banner-image" />
         <h1>
           Discover new things on <br /> Superapp
         </h1>
       </div>
 
-      <div className="registration-form">
+      <div className={styles.registration_form}>
         <img src={suppericon} alt="supericon" />
         <h3>Create your new account</h3>
 
-        <form className="input-fields" onSubmit={handleSubmit}>
+        <form className={styles.input_fields} onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Name"
@@ -61,7 +62,7 @@ const Registration = () => {
             onChange={(e) => handleChange(e)}
           />
 
-          <span className="error">{error.name}</span>
+          <span className={styles.error}>{error.name}</span>
 
           <input
             type="text"
@@ -70,7 +71,7 @@ const Registration = () => {
             value={form.username}
             onChange={(e) => handleChange(e)}
           />
-          <span className="error">{error.username}</span>
+          <span className={styles.error}>{error.username}</span>
 
           <input
             type="email"
@@ -79,7 +80,7 @@ const Registration = () => {
             value={form.email}
             onChange={(e) => handleChange(e)}
           />
-          <span className="error">{error.email}</span>
+          <span className={styles.error}>{error.email}</span>
 
           <input
             type="number"
@@ -88,7 +89,7 @@ const Registration = () => {
             value={form.mobile}
             onChange={(e) => handleChange(e)}
           />
-          <span className="error">{error.mobile}</span>
+          <span className={styles.error}>{error.mobile}</span>
 
           <label id="check-box">
             <input
@@ -99,12 +100,12 @@ const Registration = () => {
             />
             <span>Share my registration data with Superapp</span>
           </label>
-          <span className="error">{error.isChecked}</span>
+          <span className={styles.error}>{error.isChecked}</span>
 
-          <button className="submit-btn">SIGN UP</button>
+          <button className={styles.submit_btn}>SIGN UP</button>
         </form>
 
-        <div className="terms-condition">
+        <div className={styles.terms_condition}>
           <p>
             By clicking on Sign up. you agree to Superapp
             <span>Terms and Conditions of Use</span>

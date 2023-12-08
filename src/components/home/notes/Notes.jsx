@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import styles from "./notes.module.css";
 const Notes = () => {
   const [note, setNote] = useState("");
   const handleChange = (e) => {
@@ -11,7 +12,7 @@ const Notes = () => {
     setNote(savedNotes);
   }, []);
   return (
-    <div className="note-body">
+    <div className={styles.note_body}>
       <h1>All Notes</h1>
       <textarea
         placeholder="Write something here"

@@ -1,9 +1,9 @@
 import React from "react";
-import { useFetch } from "../../utils/FetchData";
+import { useFetch } from "../../api/FetchData";
 import noimage from "../../assets/images/noimage.png";
 
 const Movie = ({ genre }) => {
-  const url = `https://moviesdatabase.p.rapidapi.com/titles?genre=${genre}`;
+  const url = `https://moviesdatabase.p.rapidapi.com/titles?genre=${genre}&limit=4`;
   const options = {
     method: "GET",
     headers: {
@@ -12,22 +12,20 @@ const Movie = ({ genre }) => {
     },
   };
 
-  const { isLoading, apiData } = useFetch(url, options);
-
+  const { isLoading, apiData, serverError } = useFetch(url, options);
+  serverError && console.log(serverError.message);
   return (
     <>
       {isLoading ? (
         <h2>Loading...</h2>
       ) : (
-        apiData?.results
-          ?.splice(0, 4)
-          .map((data, idx) => (
-            <img
-              key={idx}
-              alt="movie-image"
-              src={data?.primaryImage?.url ? data?.primaryImage?.url : noimage}
-            />
-          ))
+        apiData?.results.map((data, idx) => (
+          <img
+            key={idx}
+            alt="movie-image"
+            src={data?.primaryImage?.url ? data?.primaryImage?.url : noimage}
+          />
+        ))
       )}
     </>
   );

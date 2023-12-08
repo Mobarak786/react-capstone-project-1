@@ -1,0 +1,114 @@
+.registration_page {
+  width: 100vw;
+  height: auto;
+  display: flex;
+}
+.page_banner {
+  position: relative;
+  width: 50%;
+  height: fit-content;
+}
+.page_banner img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.page_banner h1 {
+  position: absolute;
+  left: 80px;
+  bottom: 50%;
+  font-family: Roboto;
+  font-size: clamp(30px, 4vw, 50px);
+  font-weight: 900;
+}
+.registration_form {
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registration_form img {
+  width: 200px;
+  height: 80px;
+  object-fit: contain;
+  margin-top: 60px;
+}
+.registration_form h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+.input_fields {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.input_fields > input {
+  width: 350px;
+  height: 50px;
+  color: white;
+  background-color: rgba(41, 41, 41, 1);
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.input_fields input:focus {
+  outline: none;
+}
+.input_fields input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#check-box {
+  margin-top: 20px;
+}
+#check-box span {
+  margin-left: 7px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: rgba(124, 124, 124, 1);
+}
+.error {
+  margin-top: 5px;
+  color: rgba(255, 0, 0, 1);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.submit_btn {
+  margin-top: 40px;
+  width: 350px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  background: rgba(114, 219, 115, 1);
+}
+
+.terms_condition {
+  margin-top: 20px;
+  width: 350px;
+}
+.terms_condition p {
+  color: rgba(124, 124, 124, 1);
+  margin-top: 10px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.terms_condition p span {
+  color: rgba(114, 219, 115, 1);
+}

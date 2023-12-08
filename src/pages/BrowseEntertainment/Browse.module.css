@@ -8,6 +8,9 @@
   justify-content: space-between;
   align-items: top;
 }
+.header img {
+  cursor: pointer;
+}
 .supericon {
   margin-left: 10px;
   width: 150px;
@@ -50,8 +53,8 @@
   align-items: center;
 }
 .movie img {
-  width: 300px;
-  height: 190px;
+  width: 20vw;
+  height: 24vh;
   object-fit: cover;
   margin: 10px;
 }

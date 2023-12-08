@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
+import styles from "./timer.module.css";
+
 import increment from "../../../assets/icons/increment.png";
 import decrement from "../../../assets/icons/decrement.png";
 import Countdown from "./Countdown";
 import { playSound } from "../../../Functions";
+
 let circumference = 410;
 
 const Timer = () => {
@@ -65,12 +68,13 @@ const Timer = () => {
       second <= 0 ? setSecond(59) : setSecond((prev) => prev - 1);
     }
   };
+
   return (
-    <div className="timer-body">
+    <div className={styles.timer_body}>
       <Countdown stroke={stroke} totaltime={totaltime} />
 
-      <div className="set-counter">
-        <div className="hour-min-sec">
+      <div className={styles.set_counter}>
+        <div className={styles.hour_min_sec}>
           <div>
             <h4>Hours</h4>
             <img

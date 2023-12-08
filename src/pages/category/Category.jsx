@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import alrt from "../assets/icons/alrt.png";
-import supericon from "../assets/icons/Superapp.png";
-import { imageArray } from "../Functions";
-import CategoryBox from "../components/category/CategoryBox";
+import styles from "./category.module.css";
+import alrt from "../../assets/icons/alrt.png";
+import supericon from "../../assets/icons/Superapp.png";
+import { imageArray } from "../../Functions";
+import CategoryBox from "../../components/category/CategoryBox";
 
 const Category = () => {
   const [selected, setSelected] = useState([]);
@@ -19,8 +20,8 @@ const Category = () => {
     selected.length >= 3 && navigate("/home");
   };
   return (
-    <div className="category-page">
-      <div className="cate-part-1">
+    <div className={styles.category_page}>
+      <div className={styles.cate_part_1}>
         <img
           id="supericon"
           src={supericon}
@@ -29,22 +30,22 @@ const Category = () => {
           height={50}
         />
         <h1>Choose your entertainment category</h1>
-        <div className="selected-cat-div">
+        <div className={styles.selected_cat_div}>
           {selected?.map((item) => (
-            <div key={item} className="selected-category">
+            <div key={item} className={styles.selected_category}>
               <h2>{item}</h2>
               <button onClick={() => handleClick(item)}>X</button>
             </div>
           ))}
         </div>
         {showError && (
-          <span className="error">
+          <span className={styles.error}>
             <img src={alrt} alt="alrt" width={15} height={15} /> Minimum 3
             category required
           </span>
         )}
       </div>
-      <div className="cate-part-2">
+      <div className={styles.cate_part_2}>
         {imageArray?.map((item) => (
           <CategoryBox
             key={item.title}
@@ -53,7 +54,7 @@ const Category = () => {
             setSelected={setSelected}
           />
         ))}
-        <div className="cat-page-next-btn">
+        <div className={styles.cat_page_next_btn}>
           <button onClick={handleNext}>Next Page</button>
         </div>
       </div>

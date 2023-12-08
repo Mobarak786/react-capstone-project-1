@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import styles from "./categorybox.module.css";
 const CategoryBox = ({ item, selected, setSelected }) => {
   const [isclicked, setIsclicked] = useState(false);
   useEffect(() => {
@@ -13,7 +13,7 @@ const CategoryBox = ({ item, selected, setSelected }) => {
 
   return (
     <div
-      className="category-box"
+      className={styles.category_box}
       style={
         selected[selected.indexOf(item.title)]
           ? { background: item.color, border: "4px solid green" }
